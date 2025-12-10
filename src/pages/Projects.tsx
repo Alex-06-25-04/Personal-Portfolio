@@ -109,7 +109,7 @@ export default function Projects() {
                                                 View Demo
                                             </button> */}
 
-                                                <a href={project.github}>
+                                                <a target="_blank" href={project.github}>
                                                     <button className="px-6 lg:px-8 py-3 lg:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-1 transition-all duration-300 text-sm lg:text-base">
                                                         Source Code
                                                     </button>
