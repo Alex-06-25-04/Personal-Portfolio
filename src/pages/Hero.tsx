@@ -98,11 +98,11 @@ export default function Hero() {
                                 </h1>
 
                                 {/* Typing Animation */}
-                                <div className="h-16 lg:h-20 flex items-center justify-center lg:justify-start">
-                                    <span className="text-2xl lg:text-4xl xl:text-5xl font-semibold text-gray-300">
+                                <div className="min-h-16 lg:min-h-20 flex items-start justify-center lg:justify-start">
+                                    <span className="text-2xl lg:text-4xl xl:text-5xl font-semibold text-gray-300 inline">
                                         {displayedText}
+                                        <span className="animate-pulse text-cyan-400 ml-1">|</span>
                                     </span>
-                                    <span className="animate-pulse text-cyan-400 text-2xl lg:text-4xl xl:text-5xl ml-1">|</span>
                                 </div>
                             </div>
 
