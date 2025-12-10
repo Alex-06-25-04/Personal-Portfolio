@@ -1,12 +1,12 @@
 export const projects = [
     {
         id: 1,
-        name: 'E-commerce (frontend)',
+        name: 'Essentya - E-commerce (frontend)',
         tech: 'HTML, CSS, Bootstrap, JavaScript, JQuery',
         description: 'A responsive user interface for an online store, featuring product catalog display, filtering, search functionality, and a client-side shopping cart implementation. The UI is built using Bootstrap and vanilla JavaScript to ensure a smooth, intuitive, and highly functional user experience.',
         status: 'Frontend Complete',
         preview: 'https://res.cloudinary.com/ddmfajyml/image/upload/v1765320294/Screenshot_2025-12-09_234435_zdylfk.png',
-        github: '',
+        github: 'https://github.com/Alex-06-25-04/Essentya',
         isMobile: false
     },
     {
@@ -16,6 +16,7 @@ export const projects = [
         description: "A cross-platform (or native) mobile application designed for gym members and staff, providing comprehensive tools for user profile management, workout scheduling, session tracking, and seamless synchronization with a RESTful backend system. The user interface is optimized for mobile devices to ensure a smooth, intuitive, and high-performance experience.",
         status: 'Full Stack',
         preview: 'https://res.cloudinary.com/ddmfajyml/image/upload/v1765330153/Screenshot_20251210_022901_qiqhop.png',
+        github: 'https://github.com/Alex-06-25-04/OptiGym',
         isMobile: true
     },
     {
