@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies & build output
+node_modules/
+dist/
+dist-ssr/
+out/
+.vite/
+
+# Environment variables (ma non il .example)
+.env
+.env.local
+.env.*.local
+
+# OS & Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# Misc
+*.local
+.eslintcache
+
+READY_TO_DEPLOY.md
+CHARINDEX.md
+DEPLOY_GUIDE.md
+READY_TO_DEPLOY.md
