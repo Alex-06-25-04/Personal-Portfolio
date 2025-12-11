@@ -168,7 +168,7 @@ export default function About() {
                                         }}
                                     >
                                         {index !== journey.length - 1 && (
-                                            <div className="absolute left-8 top-16 w-0.5 h-20 bg-gradient-to-b from-cyan-400 to-blue-500"></div>
+                                            <div className="absolute left-8 top-16 w-0.5 h-20 bg-gradient-to-b from-cyan-400 to-blue-500 -z-10"></div>
                                         )}
 
                                         <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
