@@ -97,7 +97,7 @@ export default function About() {
                                 {/* Quick Stats */}
                                 <div className="grid grid-cols-3 gap-6 lg:gap-8 pt-6 lg:pt-8">
                                     <div className="text-center">
-                                        <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-cyan-400">10+</div>
+                                        <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-cyan-400">5</div>
                                         <div className="text-gray-400 text-xs lg:text-sm">Projects Built</div>
                                     </div>
                                     <div className="text-center">
