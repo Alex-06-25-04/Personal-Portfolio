@@ -1,9 +1,19 @@
 import useInView from '../hooks/useInView';
 import { Title, Meta } from 'react-head';
 import { projects } from '../datas/projects';
+import { useEffect, useState } from 'react';
 
 export default function Projects() {
-    const [titleRef, titleInView] = useInView<HTMLDivElement>({ threshold: 0.7 })
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [titleRef, titleInView] = useInView<HTMLDivElement>({ threshold: isMobile ? 0.2 : 0.5 });
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <>
@@ -32,7 +42,7 @@ export default function Projects() {
                     {/* LAYOUT: Usa tutto lo spazio disponibile */}
                     <div className="w-full space-y-8 lg:space-y-12">
                         {projects.map((project, index) => {
-                            const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.7 }) // // threshold 0.2 significa che l'animazione parte quando il 20% dell'elemento è visibile
+                            const [ref, inView] = useInView<HTMLDivElement>({ threshold: isMobile ? 0.2 : 0.5 }) // // threshold 0.2 significa che l'animazione parte quando il 20% dell'elemento è visibile
                             return (
                                 <div
                                     ref={ref}
