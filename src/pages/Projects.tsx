@@ -62,15 +62,15 @@ export default function Projects() {
                                     style={{ animationDelay: `${index * 150}ms` }}
                                 >
                                     {/* Preview Section */}
-                                    <div className="lg:w-2/5 xl:w-1/3 relative bg-gradient-to-br from-gray-900/60 to-gray-800/60 overflow-hidden min-h-[250px] p-4 lg:min-h-[350px] xl:min-h-[400px]">
+                                    <div className="lg:w-2/5 xl:w-1/3 relative bg-gradient-to-br from-gray-900/60 to-gray-800/60 overflow-hidden p-2 lg:p-3 flex items-center justify-center">
                                         <img
                                             src={project.preview}
                                             alt={project.name}
                                             loading="lazy"
-                                            className={`rounded-2xl opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 shadow-2xl
-                                                    ${project.isMobile
-                                                    ? 'w-full h-auto max-h-[300px] lg:max-h-[500px] object-contain' // immagine mobile: alta e centrata
-                                                    : 'w-full h-full min-h-[300px] lg:min-h-[350px] object-cover'   // immagine desktop: riempie tutto
+                                            className={`relative w-full h-auto rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.03]
+                                                ${project.isMobile
+                                                    ? 'object-contain max-h-[420px]'
+                                                    : 'object-contain max-h-[360px]'
                                                 }`}
                                         />
 

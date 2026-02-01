@@ -39,6 +39,16 @@ export const projects = [
     //     preview: '💬'
     // },
     {
+        id: 4,
+        name: 'Book Library',
+        tech: 'Laravel, SQLite, Sanctum, Vanilla JS, Vite, CSS3',
+        description: 'Full-stack web application for managing a personal book library. Features user authentication with Laravel Sanctum, book catalog integration from public API, personal reading list management with CRUD operations, genre filtering, and statistical analytics. Built as a Single Page Application (SPA) with client-side routing and RESTful API architecture.',
+        status: 'Full Stack',
+        preview: 'https://res.cloudinary.com/ddmfajyml/image/upload/v1769903952/Screenshot_2026-02-01_005739_frmzae.png',
+        github: 'https://github.com/Alex-06-25-04/BookLibraryAPI_Laravel',
+        isMobile: false,
+    },
+    {
         id: 5,
         name: 'ToDo List Advanced',
         tech: 'HTML, CSS, Tailwind, JavaScript',
@@ -50,6 +60,16 @@ export const projects = [
     },
     {
         id: 6,
+        name: 'Mini Archive',
+        tech: 'Laravel 11, SQLite, Sanctum, Bootstrap 5, Vanilla JS, Vite',
+        description: 'A full-stack web application for managing and organizing digital resources (documents, software, hardware, courses, etc.). Features token-based authentication via Laravel Sanctum with role-based access control (Admin/User), full CRUD operations for resource management, category-based filtering, and real-time search. Built as a SPA-like experience using Vanilla JS with a RESTful API backend and Service Layer architecture.',
+        status: 'Full Stack',
+        preview: 'https://res.cloudinary.com/ddmfajyml/image/upload/v1769901491/Screenshot_2026-01-15_182035_x3sf6g.png',
+        github: 'https://github.com/Alex-06-25-04/mini-archive',  // ← FIX: aggiorna con il tuo URL corretto
+        isMobile: false,
+    },
+    {
+        id: 7,
         name: 'Comics-Lar',
         tech: 'PHP, Laravel, Blade, MySQL',
         description: 'A robust and secure web data management system (CRUD - Create, Read, Update, Delete), developed using PHP for the backend logic and MySQL as the relational database. The system is designed for efficient data administration, with a critical focus on transaction security and interface responsiveness.',
@@ -58,4 +78,5 @@ export const projects = [
         github: 'https://github.com/Alex-06-25-04/Comics-Lar',
         isMobile: false
     },
+
 ];
