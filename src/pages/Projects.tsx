@@ -26,7 +26,7 @@ export default function Projects() {
                 <div className="absolute inset-0">
                     <div className="absolute top-1/4 left-1/6 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-1/3 right-1/6 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                </div>
+                                </div>
 
                 <div className="relative z-10">
                     <div ref={titleRef} className="text-center mb-16">
@@ -54,15 +54,10 @@ export default function Projects() {
                                         }
                               ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                                         } flex flex-col lg:flex`}
-                                    // Se la condizione index % 2 === 0 è vera (cioè, l'indice è pari), 
-                                    // viene applicata la classe lg:flex-row. 
-                                    // Questa classe imposta la direzione di Flexbox su una riga normale, 
-                                    // mantenendo l'ordine originale dei div: prima l'immagine (Preview Section),
-                                    //  poi il contenuto (Content Section).
                                     style={{ animationDelay: `${index * 150}ms` }}
                                 >
-                                    {/* Preview Section */}
-                                    <div className="lg:w-2/5 xl:w-1/3 relative bg-gradient-to-br from-gray-900/60 to-gray-800/60 overflow-hidden p-2 lg:p-3 flex items-center justify-center">
+                                    {/* Preview Section - MIGLIORATA PER CENTRATURA */}
+                                    <div className="lg:w-2/5 xl:w-1/3 relative bg-gradient-to-br from-gray-900/60 to-gray-800/60 overflow-hidden p-4 lg:p-6 flex items-center justify-center lg:min-h-[400px]">
                                         <img
                                             src={project.preview}
                                             alt={project.name}
@@ -70,7 +65,7 @@ export default function Projects() {
                                             className={`relative w-full h-auto rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.03]
                                                 ${project.isMobile
                                                     ? 'object-contain max-h-[420px]'
-                                                    : 'object-contain max-h-[360px]'
+                                                    : 'object-cover max-h-[340px] w-full'
                                                 }`}
                                         />
 
@@ -115,10 +110,6 @@ export default function Projects() {
 
                                             {/* Action Buttons */}
                                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                                {/* <button className="px-6 lg:px-8 py-3 lg:py-4 border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-cyan-400 hover:text-cyan-400 hover:bg-cyan-400/5 transition-all duration-300 text-sm lg:text-base">
-                                                View Demo
-                                            </button> */}
-
                                                 <a target="_blank" href={project.github}>
                                                     <button className="px-6 lg:px-8 py-3 lg:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-1 transition-all duration-300 text-sm lg:text-base">
                                                         Source Code
