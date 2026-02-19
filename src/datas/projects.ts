@@ -50,6 +50,16 @@ export const projects = [
     },
     {
         id: 5,
+        name: 'Nexus E-Commerce',
+        tech: 'PHP, MySQL, Vanilla JS, Vite, Tailwind CSS',
+        description: 'Full-stack e-commerce web application with product catalog, category filtering, cart management, favorites, and user authentication with session-based login. Built as a Single Page Application (SPA) with client-side routing and RESTful API architecture. Backend deployed on Railway, frontend on Netlify.',
+        status: 'Full Stack',
+        preview: 'https://res.cloudinary.com/ddmfajyml/image/upload/v1771499607/Screenshot_2026-02-17_175637_b64f4h.png',
+        github: 'https://github.com/Alex-06-25-04/Nexus-E-Commerce',
+        isMobile: false,
+    },
+    {
+        id: 6,
         name: 'ToDo List Advanced',
         tech: 'HTML, CSS, Tailwind, JavaScript',
         description: 'A dynamic and reactive web application for comprehensive task management (CRUD: Create, Read, Update, Delete), designed to optimize personal and professional productivity. The application leverages HTML5, CSS3, and JavaScript for the logical interface, ensuring a seamless User Experience (UX), and Bootstrap for complete responsiveness.',
@@ -59,7 +69,7 @@ export const projects = [
         isMobile: false
     },
     {
-        id: 6,
+        id: 7,
         name: 'Mini Archive',
         tech: 'Laravel 11, SQLite, Sanctum, Bootstrap 5, Vanilla JS, Vite',
         description: 'A full-stack web application for managing and organizing digital resources (documents, software, hardware, courses, etc.). Features token-based authentication via Laravel Sanctum with role-based access control (Admin/User), full CRUD operations for resource management, category-based filtering, and real-time search. Built as a SPA-like experience using Vanilla JS with a RESTful API backend and Service Layer architecture.',
@@ -69,7 +79,7 @@ export const projects = [
         isMobile: false,
     },
     {
-        id: 7,
+        id: 8,
         name: 'Comics-Lar',
         tech: 'PHP, Laravel, Blade, MySQL',
         description: 'A robust and secure web data management system (CRUD - Create, Read, Update, Delete), developed using PHP for the backend logic and MySQL as the relational database. The system is designed for efficient data administration, with a critical focus on transaction security and interface responsiveness.',
